@@ -1,0 +1,50 @@
+
+{% include "base.njk" %}
+
+<main class="cont">
+<div class="row">
+<div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
+<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+
+<section>
+  	<div class="List">
+	<h3>MENU LIST</h3>
+	<br>
+	<div>
+	    {% for x in data.foodCats %}        
+        <section>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">                  
+                    <h4>  {{ x.name }}: </h4>
+                </div>
+                    <div class="col-lg-9 col-md-9 col-sm-0 col-xs-0"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <ol>
+                        {% for q in x.item %}
+                            <li> {{ q.name }} .... {{ q.price }} 
+                            <br> 
+                            {{ q.description }}</li>
+                        {% endfor %}
+                    </ol> 
+                </div>     
+                <div class="col-lg-4 col-md-4 col-sm-0 col-sm-0">
+                    <img class="img-responsive" class="image" src="{{ x.image }}" alt ="Image" height="175px" width="225px">        
+                </div>
+                <br>
+            </div>
+            <hr>
+        </section>
+        {% endfor %}                      
+	</div>
+    </div>
+</section>		
+</div>
+    <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
+</div>
+
+
+
+

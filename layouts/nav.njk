@@ -1,0 +1,39 @@
+
+
+
+<nav class="navbar navbar-inverse" style="background-color: #3C1515;">
+    <div class="container-fluid">
+        <div class="navbar-header">
+          	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">            
+            	<span class="sr-only">Toggle Navigation</span>
+            	<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+          	</button>           
+        </div>
+        <div id="myNavbar" class="navbar-collapse collapse">
+        
+        	{% for item in links %}
+          		<ul class="nav navbar-nav">
+              		<li><a href="{{item.url}}" style="color:#F8DADA;">{{item.title}}</a></li>
+          		</ul>
+          	{% endfor %}
+        </div>
+    </div>
+</nav>
+
+<br>
+<section>
+    <footer>
+        <center> 
+        <h1 style="/* font-size:60px; */"> Fineza Dining <h1>
+        <h3> Open Hours: </h3>
+            <h4 style="font-size:22px;font-family:'Slabo 27px', serif;">                
+                {% for t in hour.hours %}
+                    {{ t }}
+                    <br> 
+                {% endfor %}
+            </h4> 
+        </center>
+    </footer>
+</section>

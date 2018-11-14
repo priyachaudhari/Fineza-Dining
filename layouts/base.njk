@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+<link rel="stylesheet" href="bootstrap.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>{{title}}</title>
+
+<style>
+
+	
+  	body{
+  		background-color: #B17878;
+  	}
+
+	h1 {
+		text-align: center;	
+  		font-family: 'Slabo 27px', serif;
+  		color: #3C1515;
+		font-size: 60px;	
+  	}
+
+  	
+  	h2, h3{
+  		text-align: center;
+  		font-family: 'Slabo 27px', serif;
+  		font-size: 30px;
+  	}
+
+
+	li{ 
+		list-style-type: none; 
+		font-size: 18px;
+		font-family: 'Slabo 27px', serif;
+	}
+
+	h4{
+		font-size: 25px;
+	}
+
+
+  	.List{
+		margin: 25px 50px 40px 50px;
+  		border:2px solid rgb(175,124,124);
+  		padding: 20px;		
+  		background-color: #F8DADA;
+		text-align: justify;
+		font-family: 'Slabo 27px', serif;
+	  }
+
+	.center {
+  		display: block;
+		margin: auto;
+  		
+	}
+
+	.image{
+		height: 125px;
+  		width: 175px;
+		float: right;
+			
+  	}
+	
+	
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+  	a {
+    	text-decoration: none;
+    	font-size: 20px;
+		color: #3C1515;
+		padding: 15px;	
+	}
+
+	
+	.navbar {
+ 		  	overflow: hidden;	
+		}
+
+
+	.navbar a{ 					
+ 			color: #3C1515;
+  			font-size: 25px;
+			text-decoration: none;
+		}
+
+	li>a:hover{
+		font-size: 27px;
+	}
+
+	.navbar a.active {			
+  			color: #3C1515;
+			text-decoration: none;
+		}
+	
+	a:hover{
+		cursor:pointer;
+	}
+
+	navbar-inverse {
+		color: #B17878
+	}
+
+	@media all and (max-width: 500px) {
+        .List {
+        	margin: 25px 0px 0px 0px;
+        }
+      }
+	
+	@media all and (max-width: 500px){
+		.img {
+			width: 100%;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	
+</style>
+
+<body>
+
+
+{% include "nav.njk" %}
+
+	{% if layout %}
+    	{% else %}
+        	{{ contents | safe }}
+	{% endif %}
+
+<script src="jquery-3.3.1.min.js"></script>	
+<script src="bootstrap.bundle.js"></script>
+
+</body>
+</html>

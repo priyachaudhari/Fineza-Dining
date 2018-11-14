@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+<link rel="stylesheet" href="bootstrap.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title></title>
+
+<style>
+
+	
+  	body{
+  		background-color: #B17878;
+  	}
+
+	h1 {
+		text-align: center;	
+  		font-family: 'Slabo 27px', serif;
+  		color: #3C1515;
+		font-size: 60px;	
+  	}
+
+  	
+  	h2, h3{
+  		text-align: center;
+  		font-family: 'Slabo 27px', serif;
+  		font-size: 30px;
+  	}
+
+
+	li{ 
+		list-style-type: none; 
+		font-size: 18px;
+		font-family: 'Slabo 27px', serif;
+	}
+
+	h4{
+		font-size: 25px;
+	}
+
+
+  	.List{
+		margin: 25px 50px 40px 50px;
+  		border:2px solid rgb(175,124,124);
+  		padding: 20px;		
+  		background-color: #F8DADA;
+		text-align: justify;
+		font-family: 'Slabo 27px', serif;
+	  }
+
+	.center {
+  		display: block;
+		margin: auto;
+  		
+	}
+
+	.image{
+		height: 125px;
+  		width: 175px;
+		float: right;
+			
+  	}
+	
+	
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+  	a {
+    	text-decoration: none;
+    	font-size: 20px;
+		color: #3C1515;
+		padding: 15px;	
+	}
+
+	
+	.navbar {
+ 		  	overflow: hidden;	
+		}
+
+
+	.navbar a{ 					
+ 			color: #3C1515;
+  			font-size: 25px;
+			text-decoration: none;
+		}
+
+	li>a:hover{
+		font-size: 27px;
+	}
+
+	.navbar a.active {			
+  			color: #3C1515;
+			text-decoration: none;
+		}
+	
+	a:hover{
+		cursor:pointer;
+	}
+
+	navbar-inverse {
+		color: #B17878
+	}
+
+	@media all and (max-width: 500px) {
+        .List {
+        	margin: 25px 0px 0px 0px;
+        }
+      }
+	
+	@media all and (max-width: 500px){
+		.img {
+			width: 100%;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	
+</style>
+
+<body>
+
+
+
+
+
+<nav class="navbar navbar-inverse" style="background-color: #3C1515;">
+    <div class="container-fluid">
+        <div class="navbar-header">
+          	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">            
+            	<span class="sr-only">Toggle Navigation</span>
+            	<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+          	</button>           
+        </div>
+        <div id="myNavbar" class="navbar-collapse collapse">
+        
+        	
+          		<ul class="nav navbar-nav">
+              		<li><a href="index.html" style="color:#F8DADA;">Home</a></li>
+          		</ul>
+          	
+          		<ul class="nav navbar-nav">
+              		<li><a href="bakery.html" style="color:#F8DADA;">Bakery</a></li>
+          		</ul>
+          	
+          		<ul class="nav navbar-nav">
+              		<li><a href="catering.html" style="color:#F8DADA;">Catering</a></li>
+          		</ul>
+          	
+          		<ul class="nav navbar-nav">
+              		<li><a href="aboutus.html" style="color:#F8DADA;">About us</a></li>
+          		</ul>
+          	
+        </div>
+    </div>
+</nav>
+
+<br>
+<section>
+    <footer>
+        <center> 
+        <h1 style="/* font-size:60px; */"> Fineza Dining <h1>
+        <h3> Open Hours: </h3>
+            <h4 style="font-size:22px;font-family:'Slabo 27px', serif;">                
+                
+                       Monday - Friday 9.00AM to 9.00PM
+                    <br> 
+                
+                    Saturday - Sunday 10.00AM to 7.00PM
+                    <br> 
+                
+            </h4> 
+        </center>
+    </footer>
+</section>
+
+
+	
+        	
+{
+    "foodCats":[
+        {
+         "name":"Soups",
+         "item":[
+            {"name": "Sweet n' Sour", "price": "$3.99", "description":"It is usually contains ingredients such as day lily buds, wood ear fungus, bamboo shoots."},
+            {"name": "Tomato Soup", "price": "$4.50", "description":"A soup made which includes of tomato, cream and chicken/vegetable chunks."},
+            {"name": "Manchow Soup", "price": "$4.50", "description": "A chinese soup."},           
+            {"name": "Chicken Soup", "price": "$4.99", "description":"It usually contains chicken strips in broth, onions, vegetables and macaroni noodles. "}
+        ],
+        "image":"soup.jpeg"},
+
+        { "name":"Appetizers",
+            "item":[
+            {"name": "Peanut Chutney", "price": "$2.99", "description": "Grinded baked peanuts and red chillies with water."},
+            {"name": "Cheese Balls", "price": "$6.99", "description": "Cheese cube rolled in access flour, then after rollling in breadcrumps and fried."},
+            {"name": "Veggie Samosa", "price": "$7.99", "description": "Potata mixture with peas, chilies and salt filled in a dough and fried."},           
+            {"name": "Butter Puff", "price": "$8.99", "description": "Potato, onion filling in the puff pastry."}
+        ],
+        "image":"puff.jpeg"},
+
+        { "name":"Main Course",
+            "item":[
+            {"name": "Aloo Matar", "price": "$11.99", "description": "Popular punjabi curry with potatoes and peas."},
+            {"name": "Baingan Bharta", "price": "$12.99", "description": "Mashed roasted eggplant cooked with ginger, onion, tamotoes and spices."},          
+            {"name": "Lasaniya Bataka", "price": "$13.99", "description": "Spicy garlic potatoes."},
+            {"name": "Patra nu Shak", "price": "$13.99", "description": "An unusual combination of ridge gourd (Very popular vegetable in India) and patra."}
+        ],
+        "image":"bharta.jpg"},
+
+        { "name":"Naan",
+            "item":[
+            {"name": "Cheese Naan", "price": "$2.99", "description": "A type of Indian leavened bread traditionally cooked in a oven with cheese stuffing."},
+            {"name": "Garlic Naan", "price": "$2.99", "description": "A type of Indian leavened bread traditionally cooked in a oven flavored with garlic and butter."},
+            {"name": "Garlic Cheese Naan", "price": "$3.99", "description": "A combination of Garlic and Cheese naan."},
+            {"name": "Onion Kulcha", "price": "$3.99", "description": "Kulcha is yet another popular bread from northern parts of India with onion stuffing."}
+        ],
+        "image":"naan.jpg"}
+
+]}
+
+	
+
+<script src="jquery-3.3.1.min.js"></script>	
+<script src="bootstrap.bundle.js"></script>
+
+</body>
+</html>
